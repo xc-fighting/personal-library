@@ -1,0 +1,10 @@
+insert into bookinfo values('aaaa','c','tan','c programming');
+insert into bookinfo values('aabb','computer3','xu','a book computer');
+insert into bookinfo values('bbbb','net','yangdanyu','windows socket');
+insert into bookinfo values('ccca','algorithm','xuchen','reference algorithm');
+insert into bookinfo values('cccc','asp.net','xuc','asp.net design');
+insert into bookinfo values('dddd','android,java','yang','book for android developer');
+insert into bookinfo values('ddde','algorithm1','tang','text book for distribution algorithm');
+insert into bookinfo values('eeee','computer2','lou','computer net work classical book');
+insert into bookinfo values('eeef','java','chenxu','java programming text book');
+insert into bookinfo values('ffff','compile','yuguo','classical text book for compile');

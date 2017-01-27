@@ -1,0 +1,227 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\netlibrary.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\netlibrary.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NETLIBRARY_DIALOG DIALOGEX 0, 0, 336, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "netlibrary"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "网络版图书管理系统",IDC_STATIC,125,14,80,13
+    LTEXT           "作者：杨丹羽，徐辰",IDC_STATIC,126,155,91,9
+    LTEXT           "请输入服务器ip地址",IDC_STATIC,125,45,80,8
+    EDITTEXT        IP_EDIT,104,61,132,17,ES_AUTOHSCROLL
+    LTEXT           "请输入服务器端口号",IDC_STATIC,125,87,77,11
+    EDITTEXT        PORT_EDIT,104,105,134,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "进入系统",ENTER_BUTTON,138,129,56,16
+END
+
+IDD_MENU DIALOG DISCARDABLE  0, 0, 289, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "主界面"
+FONT 10, "System"
+BEGIN
+    LTEXT           "请先进行登录",IDC_STATIC,121,14,60,10
+    LTEXT           "用户名:",IDC_STATIC,54,41,33,9
+    EDITTEXT        USERNAME_INPUT,98,39,97,13,ES_AUTOHSCROLL
+    LTEXT           "密码:",IDC_STATIC,55,73,29,9
+    EDITTEXT        PASSWORD_INPUT,97,69,96,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "登录系统",LOGIN_BUTTON,221,39,42,41
+    PUSHBUTTON      "新用户注册",REGISTER_BUTTON,119,110,46,13
+END
+
+IDD_register DIALOG DISCARDABLE  0, 0, 239, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新用户注册"
+FONT 10, "System"
+BEGIN
+    LTEXT           "输入用户名:",IDC_STATIC,29,19,60,14
+    EDITTEXT        IDC_reguser,93,17,101,15,ES_AUTOHSCROLL
+    LTEXT           "输入密码:",IDC_STATIC,28,50,44,12
+    EDITTEXT        IDC_regpwd,93,47,99,15,ES_AUTOHSCROLL
+    LTEXT           "密码确认:",IDC_STATIC,29,77,37,12
+    EDITTEXT        IDC_regpwdconfirm,94,76,97,14,ES_AUTOHSCROLL
+    CONTROL         "管理员",IDC_administrater,"Button",BS_AUTORADIOBUTTON,
+                    54,99,39,13
+    CONTROL         "读者",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,136,96,42,
+                    15
+    PUSHBUTTON      "注册",IDC_regbutton,99,124,43,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "netlibrary Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "netlibrary\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "netlibrary.EXE\0"
+            VALUE "ProductName", "netlibrary 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_NETLIBRARY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_register, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\netlibrary.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
